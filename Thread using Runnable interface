@@ -1,0 +1,25 @@
+/* Thread eg by implement Runnable interface :-
+ * 
+ * 
+ * 
+ */
+package com;
+
+ class A implements Runnable
+ {
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		System.out.println("Hi I am Running");
+	}	 
+ }
+
+ class Demo2
+ {
+ public static void main(String[]args)
+ {
+	 A a1=new A();
+	 Thread t1=new Thread(a1);
+	 t1.start();
+ }
+ }
